@@ -6,8 +6,6 @@
   - @filters.each do |filter|
     = render "services/filters/#{filter.type}", filter: filter
 
-  .row
-    .col-md-12
-      %button#filter-submit.btn.btn-primary.mt-4.w-100.filter-submit{ type: "submit" }
-        Filter
 
+%button#filter-submit.btn.btn-primary.mt-4.w-100.filter-submit{ type: "submit" }
+  Filter

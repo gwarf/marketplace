@@ -17,12 +17,14 @@ Please view this file on the master branch, on stable branches it's out of date.
 ### Removed
 
 ### Fixed
+- Url validation (@martaswiatkowska)
 
 ### Security
 
 ## [2.2.0] 2019-10-18
 
 ### Added
+- EOSC logo update (@bwilk)
 - Filtering by upstream source in the backoffice (@goreck888)
 - Add marketplace service preview in the backoffice (@mkasztelnik, @goreck888)
 - Service unverified but published state (@mkasztelnik)

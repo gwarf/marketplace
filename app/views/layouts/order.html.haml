@@ -11,7 +11,8 @@
             service_cancel_path(@service),
             method: :delete, class: "text-uppercase align-middle"
           .ml-3.d-inline
-            %button.btn.btn-primary{ form: "order-form", type: "submit" }= next_title
+            %button.btn.btn-primary{ order_submit_options(step_title(step_key),
+              @offer_type == "orderable") }= next_title
       = render "layouts/flash"
     %main.container.order-container
       %h1.font-weight-bold.mt-4
@@ -25,7 +26,7 @@
           - if prev_visible_step_key
             = link_to prev_title, url_for([@service, prev_visible_step_key]), class: "text-uppercase"
         .ml-3.d-inline
-          %button.btn.btn-primary{ form: "order-form", type: "submit" }= next_title
+          %button.btn.btn-primary{ order_submit_options(step_title(step_key), @offer_type == "orderable") }= next_title
 
   = render "layouts/footer", root_categories: @root_categories
   = render "layouts/modal"

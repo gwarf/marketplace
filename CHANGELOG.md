@@ -9,6 +9,7 @@ Please view this file on the master branch, on stable branches it's out of date.
 ## [Unreleased]
 
 ### Added
+- Use overmind instead of foreman in present in the classpath (@mkasztelnik)
 
 ### Changed
 
